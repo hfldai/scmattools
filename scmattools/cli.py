@@ -1,4 +1,4 @@
-import mat2mat
+import scmattools
 import argparse
 
 def cli():
@@ -13,4 +13,4 @@ def cli():
         parser.add_argument('-matt', type=str, default="target.mtx", help='path to the output target region x cell sparse count matrix (.mtx)')
 
         parsed, _ = parser.parse_known_args()
-        mat2mat.main(parsed.rq, parsed.cq, parsed.matq, parsed.rt, parsed.matt, parsed.actual_rt, parsed.actual_ct, parsed.output)
+        scmattools.mat2mat(parsed.rq, parsed.cq, parsed.matq, parsed.rt, parsed.matt, parsed.actual_rt, parsed.actual_ct, parsed.output)

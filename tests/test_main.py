@@ -1,5 +1,5 @@
 import os, unittest
-import mat2mat
+import scmattools
 
 class Test(unittest.TestCase):
 	def test_main(self):
@@ -11,7 +11,7 @@ class Test(unittest.TestCase):
 		output_rt = "target.regions"
 		output_ct = "target.cells"
 		output_matt = "target.mtx"
-		mat2mat.main(rq, cq, matq, rt, output_matt, output_rt, output_ct, output)
+		scmattools.mat2mat(rq, cq, matq, rt, output_matt, output_rt, output_ct, output)
 
 		target_rt = 'chr1\t10004036\t10005259\nchr1\t100102486\t100102490\nchr1\t100102510\t100102520\nchr1\t100102524\t100102600\nchr2\t10011487\t10011592\nchr7\t100155100\t100155230' 
 		target_ct = 'cell1\ncell2\ncell3\ncell4\ncell5\ncell7\ncell9\ncell10\ncell11\ncell12\ncell13'

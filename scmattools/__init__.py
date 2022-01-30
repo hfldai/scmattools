@@ -1,4 +1,4 @@
 __version__ = "0.0.1"
 
-from .mat_intersect_regions import *
+from .mat2mat import *
 from .cli import cli 
