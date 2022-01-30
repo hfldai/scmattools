@@ -1,4 +1,4 @@
-# scMAT-tools
+# scmattools
 
 <!-- badges: start -->
 [![codecov](https://codecov.io/gh/hfldai/scmattools/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/scmattools)
