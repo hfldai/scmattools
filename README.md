@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/hfldai/scmattools/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/scmattools)
 <!-- badges: end -->
 
-Convert a sparse count matrix (features x samples) into a new sparse count matrix of new features by calculating the overlap between features
+Intersect a count matrix rows (genomic regions) with another set of genomic regions to a new count matrix
 
 ## Installation
 ```

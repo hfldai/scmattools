@@ -5,7 +5,7 @@ class Test(unittest.TestCase):
 	def test_main(self):
 		rq = "tests/test_data/test.query.regions"
 		cq = "tests/test_data/test.query.cells"
-		matq = "tests/test_data/test.query.mtx"#"/well/gerton/liangtid/Github/scATAC-pro/runs/10x_pbmc5k_v1.1.0_hmmpeaks_20220128033420/filtered_matrix/MODEL/FILTER/matrix.mtx"
+		matq = "tests/test_data/test.query.mtx"
 		rt = "tests/test_data/test.target.regions" 
 		output = "tests/test_output/"
 		output_rt = "target.regions"

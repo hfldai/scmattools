@@ -9,6 +9,7 @@
 * selected contigs
 * unconventional/unmatsched contig names
 * cell -> sample
+* improve mtx reading
 
 ## Other functions to add
 * get statistics, qc, downstream analysis
