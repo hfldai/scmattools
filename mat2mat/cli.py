@@ -1,18 +1,5 @@
 import mat2mat
 import argparse
-"""
-TODO:
-	pre-processingL
-		regions -> tab
-		non-csm/mat -> mtx
-	isStrand
-	min fraction of region overlap
-	mean counts when small regions in the middle and many overlap?
-	selected contigs
-	unconventional contig names
-	cell -> sample	
-	
-"""
 
 def cli():
         parser = argparse.ArgumentParser()

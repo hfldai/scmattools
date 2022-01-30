@@ -79,7 +79,6 @@ def load_count_mat(file):
 	
 def reindex(actual, base=1):
 	"""
-	TODO: DOCUMENTATION
 	Re-index a numeric list with missing values removed (assuming both are unique and sorted ascendingly):
 	Ex: 
 		input: original:[1,2,3,4,5], actual:[2,4];
