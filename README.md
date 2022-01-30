@@ -1,7 +1,7 @@
-# mat2mat
+# scMAT-tools
 
 <!-- badges: start -->
-[![codecov](https://codecov.io/gh/hfldai/mat2mat/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/mat2mat)
+[![codecov](https://codecov.io/gh/hfldai/scMAT-tools/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/scMAT-tools)
 <!-- badges: end -->
 
 Convert a sparse count matrix (features x samples) into a new sparse count matrix of new features by calculating the overlap between features
@@ -9,8 +9,8 @@ Convert a sparse count matrix (features x samples) into a new sparse count matri
 ## Installation
 ```
 # Download from github
-git clone git@github.com:hfldai/mat2mat.git
-cd mat2mat/
+git clone git@github.com:hfldai/scMATtools.git
+cd scMATtools/
 
 # Set up python requirements
 pip install -r requirements.txt
@@ -21,7 +21,7 @@ pip install -e .
 
 ## Usage
 ```
-usage: mat2mat [-h] [-o OUTPUT] [-actual_rt ACTUAL_RT] [-actual_ct ACTUAL_CT] [-matt MATT] rq cq matq rt
+usage: scmat-tools [-h] [-o OUTPUT] [-actual_rt ACTUAL_RT] [-actual_ct ACTUAL_CT] [-matt MATT] rq cq matq rt
 
 positional arguments:
   rq                    path to query region intervals (make sure the file is Tab separated
@@ -40,11 +40,11 @@ optional arguments:
 
 ## Example
 ```
-mat2mat tests/test_data/test.query.regions \
-        tests/test_data/test.query.cells \ 
-        tests/test_data/test.query.mtx \
-        tests/test_data/test.target.regions \
-        -o tests/example_output
+scmat-tools tests/test_data/test.query.regions \
+            tests/test_data/test.query.cells \ 
+            tests/test_data/test.query.mtx \
+            tests/test_data/test.target.regions \
+            -o tests/example_output
 ```
 
 ## Dependencies
