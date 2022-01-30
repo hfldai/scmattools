@@ -1,4 +1,4 @@
-name: Workflow for Codecov checks
+name: Ubuntu Workflow for Codecov checks
 on: [push, pull_request]
 jobs:
   run:
@@ -11,6 +11,8 @@ jobs:
         with:
           python-version: 3.9
       - name: Install dependencies
+        run: apt-get install bedtools
+      - name: Install python dependencies
         run: pip install -r requirements.txt
       - name: Install the main package
         run: pip install -e .

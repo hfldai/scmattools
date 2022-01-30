@@ -25,5 +25,6 @@ pip install
 mat2mat tests/test_data/test.query.regions tests/test_data/test.query.cells tests/test_data/test.query.mtx test.target.regions -o tests/example_output
 ```
 
-## dependencies
-see [requirements.txt](https://github.com/hfldai/mat2mat/blob/main/requirements.txt)
+## Dependencies
+* [bedtools](https://bedtools.readthedocs.io/en/latest/)
+* python packages: see [requirements.txt](https://github.com/hfldai/mat2mat/blob/main/requirements.txt)
