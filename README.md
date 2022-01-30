@@ -24,27 +24,35 @@ python tests/test_main.py
 
 ## Usage
 ```
-usage: scmattools [-h] [-o OUTPUT] [-actual_rt ACTUAL_RT] [-actual_ct ACTUAL_CT] [-matt MATT] rq cq matq rt
+usage: scmattools [-h] [-o OUTPUT] [-ort OUTPUT_RT] [-oct OUTPUT_CT]
+                  [-omatt OUTPUT_MATT]
+                  rq cq matq rt
 
 positional arguments:
-  rq                    path to query region intervals (make sure the file is Tab separated
-  cq                    path to query cell names (make sure the file is Tab separated
-  matq                  path to query region x cell sparse count matrix (.mtx)
-  rt                    path to target regions
+  rq                    path to query region intervals (make sure the file is
+                        Tab separated)
+  cq                    path to query cell names
+  matq                  path to query rq x cq sparse count matrix (.mtx)
+  rt                    path to target region intervals (make sure the file is
+                        Tab separated)
 
 optional arguments:
   -h, --help            show this help message and exit
   -o OUTPUT, --output OUTPUT
                         path to output directory
-  -actual_rt ACTUAL_RT  path to the output actual regions
-  -actual_ct ACTUAL_CT  path to the output actual target cells
-  -matt MATT            path to the output target region x cell sparse count matrix (.mtx)
+  -ort OUTPUT_RT, --output_rt OUTPUT_RT
+                        path to the output target region intervals
+  -oct OUTPUT_CT, --output_ct OUTPUT_CT
+                        path to the output target cell names
+  -omatt OUTPUT_MATT, --output_matt OUTPUT_MATT
+                        path to the output target region x cell sparse count
+                        matrix (.mtx)
 ```
 
 ## Example
 ```
 scmattools tests/test_data/test.query.regions \
-           tests/test_data/test.query.cells \ 
+           tests/test_data/test.query.cells \
            tests/test_data/test.query.mtx \
            tests/test_data/test.target.regions \
            -o tests/example_output
