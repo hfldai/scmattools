@@ -5,7 +5,6 @@ contigs = []
 
 import os, re
 from tqdm import tqdm
-import pandas as pd
 from pybedtools import BedTool
 
 def split_region(region):

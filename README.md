@@ -2,7 +2,7 @@
 Convert a sparse count matrix (features x samples) into a new sparse count matrix of new features by calculating the overlap between features
 
 <!-- badges: start -->
-[![codecov](https://codecov.io/gh/hfldai/hmmatac/branch/main/graph/badge.svg?token=O0i5rzFKMv)](https://codecov.io/gh/hfldai/mat2mat)
+[![codecov](https://codecov.io/gh/hfldai/mat2mat/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/mat2mat)
 <!-- badges: end -->
 
 A python package implementing a model-based, high resolution peak caller specific for ATAC-seq peak.
