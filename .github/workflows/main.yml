@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Install dependencies
-        run: apt-get install bedtools
+        run: sudo apt-get install bedtools
       - name: Install python dependencies
         run: pip install -r requirements.txt
       - name: Install the main package
