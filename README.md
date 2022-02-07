@@ -4,7 +4,10 @@
 [![codecov](https://codecov.io/gh/hfldai/scmattools/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/scmattools)
 <!-- badges: end -->
 
-Intersect a count matrix rows (genomic regions) with another set of genomic regions to a new count matrix
+A developing python toolkit for handling genomic count matrices. A genomic count matrix is in the format of genomic regions (rows) x samples (columns). 
+
+Funtionalities include:
+* Given a genomic count matrix and a set of new genomic regions, return a new count matrix with entries of intersecting region counts.
 
 ## Installation
 ```
