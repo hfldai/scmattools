@@ -4,10 +4,12 @@
 [![codecov](https://codecov.io/gh/hfldai/scmattools/branch/main/graph/badge.svg?token=XCEMPOM53X)](https://codecov.io/gh/hfldai/scmattools)
 <!-- badges: end -->
 
-A developing python toolkit for handling genomic count matrices. A genomic count matrix is in the format of genomic regions (rows) x samples (columns). 
+A python toolkit for exploring genomic count matrices (matrices in format of _genomic regions (rows)_ x _samples (columns)_).
 
-Funtionalities include:
-* Given a genomic count matrix and a set of new genomic regions, return a new count matrix with entries of intersecting region counts.
+Note: The package is still in development and is updated actively.
+
+Funtionalities:
+* Given a genomic count matrix and a set of new genomic regions, compute a new count matrix with entries of intersecting region counts.
 
 ## Installation
 ```
@@ -63,6 +65,7 @@ scmattools tests/test_data/test.query.regions \
 More functions coming soon...
 
 ## Dependencies
+* python (>=3.8)
 * [bedtools](https://bedtools.readthedocs.io/en/latest/)
 * python packages: see [requirements.txt](https://github.com/hfldai/mat2mat/blob/main/requirements.txt)
 
